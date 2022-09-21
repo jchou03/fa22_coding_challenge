@@ -13,15 +13,24 @@ router.post("/create", async (req, res) => {
 
 router.get("/", async (req, res) => {
   try {
-    const tasks = await Task.find();
-    res.send(tasks);
+    // const tasks = await Task.find();
+    // res.send(tasks);
+    res.send("welcome to my app!")
   } catch (error) {
     res.send(error);
   }
 });
 
 /* CREATE 'PUT' REQUEST */
+// router.put("/", async (req, res) => {
+//   try{
+
+//   }catch (error){
+//     res.send(error)
+//   }
+// })
 
 /* CREATE 'DELETE' REQUEST */
+// router.delete()
 
 module.exports = router;
